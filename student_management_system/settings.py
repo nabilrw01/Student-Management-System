@@ -55,8 +55,8 @@ ROOT_URLCONF = 'student_management_system.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
+        'DIRS': [],  # This can be updated to point to custom template directories if necessary
+        'APP_DIRS': True,  # Must be True for Django to find templates in app directories
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -67,6 +67,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'student_management_system.wsgi.application'
 
