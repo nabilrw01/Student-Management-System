@@ -25,5 +25,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('students.urls')),
+    path('', include('students.urls')),  # Ensure this points to the `students` app
 ]
+
