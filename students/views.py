@@ -7,6 +7,7 @@ from .forms import StudentForm
 from django.contrib import messages
 
 def student_list(request):
+    print("Rendering student list")
     students = Student.objects.all()
     return render(request, 'students/student_list.html', {'students': students})
 
